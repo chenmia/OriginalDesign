@@ -1,6 +1,6 @@
 void setup()
 {
-  size(500, 500);
+  size(500, 600);
   background(255, 255, 255);
   fill(0, 0, 0);
   textSize(20);
