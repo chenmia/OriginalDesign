@@ -1,16 +1,12 @@
 void setup()
 {
   size(500, 600);
-  background(255, 255, 255);
+  background(198, 216, 177);
   fill(0, 0, 0);
-  textSize(20);
-  text("Click to make the peach happy!", 120, 150);
 }
 int x = 2;
 void draw()
 { 
-
-  leaves();
   peach();
   sadFace();
 }
@@ -22,14 +18,6 @@ void peach()
   strokeWeight(7);
   bezier(125*x, 125*x, 35*x, 190*x, 120*x, 230*x, 135*x, 190*x);
   bezier(125*x, 125*x, 215*x, 170*x, 150*x, 230*x, 120*x, 200*x);
-}
-void leaves()
-{  
-  fill(0, 200, 0);
-  strokeWeight(4);
-  stroke(0, 150, 0);
-  triangle(95*x, 220*x, 140*x, 195*x, 110*x, 190*x);
-  triangle(155*x, 220*x, 110*x, 190*x, 140*x, 190*x);
 }
 float mouth = 2;
 int cheeks = 1;
@@ -134,7 +122,3 @@ void mouseClicked()
   sparkles();
   friendPeaches();
 }
-
-
-
-
